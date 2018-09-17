@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="abc">#ACACAC</color>
+	<color name="dT">#545454</color>
+	<color name="bT">#3390F8</color>
+	<color name="colorPrimary">#FFFFFF</color>
+	<color name="colorPrimaryDark">#EEEEEE</color>
+	<color name="colorAccent">#6873FF</color>
+</resources>

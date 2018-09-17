@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentTop="true">
+
+		<Button
+			android:text="Проверить обновление"
+			android:onClick="a"
+			style="@style/ButtonS3"/>
+
+		<Button
+			android:text="Мой профиль на 4PDA"
+			android:onClick="b"
+			style="@style/ButtonS3"/>
+
+		<TextView
+			android:text="Приложение создано для разблокировки тех, кого не справедливо забанили. Желаю удачи, общайтесь на здоровье! \nЕсли кто-то хочет помочь мне \nВот мои реквизиты:"
+			style="@style/TextV"/>
+
+		<TextView
+			android:text="*     WebMoney: R691737488575 \n*     Qiwi: +79286076569 \n*     Яндекс Деньги: 410016614415689"
+			android:textIsSelectable="true"
+			style="@style/TextV"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:paddingBottom="20dp"
+			android:background="#191919">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="ВНИМАНИЕ!"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#FFFFFF"
+				android:gravity="center_horizontal"
+				android:background="#3390F8"/>
+
+			<TextView
+				android:text="Для 3-го способа разблокировки требуется прописать путь к вашей памяти телефона.\nНапример, в первых двух способах используется путь:"
+				style="@style/TextV3"
+				android:paddingTop="5dp"/>
+
+			<TextView
+				android:text="/storage/emulated/0/"
+				android:textSize="16sp"
+				style="@style/TextV2"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"/>
+
+			<TextView
+				android:text="Но на некоторых устройствах этот путь может отличаться и поэтому сделан 3 способ!"
+				android:textSize="14sp"
+				style="@style/TextV3"/>
+
+			<TextView
+				android:text="Пропишите в нижнем поле путь к ПАМЯТИ ТЕЛЕФОНА:"
+				style="@style/TextV3"
+				android:paddingTop="20dp"
+				android:paddingBottom="5dp"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="3dp"
+				android:background="@color/bT"/>
+
+			<LinearLayout
+				android:weightSum="10.0"
+				android:orientation="horizontal"
+				android:layout_height="40dp"
+				android:layout_width="match_parent">
+
+				<View
+					android:background="@color/bT"
+					android:layout_width="3dp"
+					android:layout_height="match_parent"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="2.4"
+					android:singleLine="true"
+					android:id="@+id/EditText"
+					android:hint="/storage/emulated/0/"
+					android:textColorHint="#8A8A8A"
+					android:typeface="monospace"
+					android:textColor="#D8D8D8"
+					android:background="#404040"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="ПРИМЕНИТЬ"
+					android:onClick="set"
+					android:layout_weight="7.6"
+					android:background="@color/bT"
+					android:textColor="#FEFEFE"
+					android:textSize="12sp"/>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="3dp"
+				android:background="@color/bT"/>
+
+			<TextView
+				android:text="Обратите внимание на то, что путь должен начинаться и заканчиваться с этим символом: /"
+				android:textSize="14sp"
+				style="@style/TextV3"
+				android:paddingTop="5dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Разработчик: UnPro"
+			android:textStyle="bold"
+			android:textSize="18sp"
+			android:gravity="center_horizontal"
+			android:textColor="#FFFFFF"
+			android:typeface="sans"
+			android:background="#3390F8"/>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="© uDreams Studio (Скоро...)"
+			android:textColor="#FFFFFF"
+			android:typeface="sans"
+			android:textStyle="bold|italic"
+			android:gravity="center"
+			android:background="#3390F8"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

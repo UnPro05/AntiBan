@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme.Launcher" parent="@android:style/Theme.Material.NoActionBar">
+		<item name="android:windowBackground">@drawable/splash</item>
+		<item name="android:colorPrimaryDark">@android:color/white</item>
+	</style>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light">
+		<item name="android:windowTitleSize">0dp</item>
+		<item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+	</style>
+</resources>

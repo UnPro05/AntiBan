@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+		android:icon="@drawable/ic_info"
+        android:id="@+id/abouuut"
+        android:title="Информация"
+		android:showAsAction="ifRoom"/>
+    
+</menu>

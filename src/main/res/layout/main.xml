@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:gravity="top"
+		android:orientation="vertical"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Снять бан:"
+				android:layout_gravity="center_horizontal"
+				android:typeface="monospace"
+				android:textStyle="bold"
+				android:layout_marginTop="5dp"
+				android:textSize="18sp"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:text="1 Способ"
+					android:onClick="run"
+					style="@style/ButtonS2"
+					android:layout_weight="1.0"
+					android:id="@+id/pone"/>
+
+				<Button
+					android:text="2 Способ"
+					android:onClick="rune"
+					style="@style/ButtonS2"
+					android:layout_weight="0.8"
+					android:id="@+id/ptwo"/>
+
+				<Button
+					android:text="3 Способ"
+					android:onClick="runer"
+					style="@style/ButtonS2"
+					android:layout_weight="1.0"
+					android:id="@+id/pthree"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<Button
+			android:text="Скачать Чат Рулетку"
+			android:onClick="done"
+			style="@style/ButtonS"/>
+
+		<Button
+			android:text="Скачать Альтернативу"
+			android:onClick="dtwo"
+			style="@style/ButtonS"/>
+
+		<Button
+			android:text="Скачать OmeTV"
+			android:onClick="dthree"
+			style="@style/ButtonS"/>
+
+		<Button
+			android:text="Что-то ещё?"
+			android:id="@+id/mb"
+			android:onClick="aaa"
+			style="@style/ButtonS"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_alignParentBottom="true"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Путь: по умолчанию"
+			android:textColor="#2D2D2D"
+			android:id="@+id/path"
+			android:typeface="monospace"
+			android:textStyle="italic"
+			android:gravity="center_horizontal"
+			android:textSize="18sp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="СТАТУС: ××××НЕИЗВЕСТНО×××"
+			android:textColor="#2D2D2D"
+			android:id="@+id/tv"
+			android:typeface="monospace"
+			android:textStyle="italic"
+			android:gravity="center_horizontal"
+			android:textSize="18sp"
+			android:layout_below="@id/path"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+
